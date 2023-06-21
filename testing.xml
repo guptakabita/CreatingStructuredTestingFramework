@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="MyFirstSuiteName">  <!-- this is our choice not match with anything --> 
+      <!-- after finishing all the work total cases are run Loginvalid & Invalid (2*3browr=6) and register valid and invalid only 2 caese because no extra browser assign tht mean total 6+2=8 -->
+       <parameter name="UserName1" value="Adminn"/>    <!-- Global Parameter that is going to be used for all the class like login class and register class-->
+      <!--<parameter name="browser" value="chrome"/> -->  <!-- and this another way of doing by passing Global parameter so whatever value we have assign here that browser will open -->
+      
+       <test name="MyLoginTestCasewithChrome"> <!-- this is our choice not match with anything -->
+         <parameter name="browser" value="chrome"/>
+         <parameter name="Password1" value="Adminn@1234"/> <!-- Local parametr password name must match with parameter that in class loginTestCase  -->
+           
+           <classes>
+                   <class name="TestNGFramework.LoginTestCase"/>
+           
+           </classes>
+           </test>
+            <test name="MyLoginTestCaseWithFirefox"><!-- this is our choice not match with anything -->
+         <parameter name="browser" value="firefox"/>
+         <parameter name="Password1" value="Adminn@1234"/> <!-- Local parametr password name must match with parameter that in class loginTestCase  -->
+           
+           <classes>
+                   <class name="TestNGFramework.LoginTestCase"/>
+           
+           </classes>
+           </test>
+            <test name="MyLoginTestCaseWithEdge"><!-- this is our choice not match with anything -->
+         <parameter name="browser" value="edge"/>
+         <parameter name="Password1" value="Adminn@1234"/> <!-- Local parametr password name must match with parameter that in class loginTestCase  -->
+           
+           <classes>
+                   <class name="TestNGFramework.LoginTestCase"/>
+           
+           </classes>
+           </test>
+         <test name="MyRegisterTestCase">
+           <classes>
+                   <class name="TestNGFramework.RegisterTestCase"/>
+           
+           </classes>
+           </test>
+                     
+ </suite>  
+ 
+         

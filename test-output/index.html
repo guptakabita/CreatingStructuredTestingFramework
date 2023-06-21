@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-MyFirstSuiteName" class="navigator-link">
+              <span class="suite-name border-failed">MyFirstSuiteName</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-MyFirstSuiteName" class="navigator-link ">
+                    <span>C:\Users\rajus\eclipse-workspace\kabita-ws\CreatingStructuredTestingFramework\testing.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-MyFirstSuiteName" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-MyFirstSuiteName" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-MyFirstSuiteName" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-MyFirstSuiteName" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-MyFirstSuiteName" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-MyFirstSuiteName" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyFirstSuiteName" class="hide-methods failed suite-MyFirstSuiteName"> (hide)</a> <!-- hide-methods failed suite-MyFirstSuiteName -->
+                      <a href="#" panel-name="suite-MyFirstSuiteName" class="show-methods failed suite-MyFirstSuiteName"> (show)</a> <!-- show-methods failed suite-MyFirstSuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-MyFirstSuiteName">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.RegisterTestCase" class="method navigator-link" hash-for-method="RegisterWithValidData">RegisterWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyFirstSuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyFirstSuiteName" class="hide-methods passed suite-MyFirstSuiteName"> (hide)</a> <!-- hide-methods passed suite-MyFirstSuiteName -->
+                      <a href="#" panel-name="suite-MyFirstSuiteName" class="show-methods passed suite-MyFirstSuiteName"> (show)</a> <!-- show-methods passed suite-MyFirstSuiteName -->
+                    </span>
+                    <div class="method-list-content passed suite-MyFirstSuiteName">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithInValidData(Adminn)">LoginWithInValidData(Adminn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithInValidData(Adminn)">LoginWithInValidData(Adminn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithInValidData(Adminn)">LoginWithInValidData(Adminn)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithValidData(Adminn, Adminn@1234)">LoginWithValidData(Adminn, Adminn@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithValidData(Adminn, Adminn@1234)">LoginWithValidData(Adminn, Adminn@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.LoginTestCase" class="method navigator-link" hash-for-method="LoginWithValidData(Adminn, Adminn@1234)">LoginWithValidData(Adminn, Adminn@1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-MyFirstSuiteName" title="TestNGFramework.RegisterTestCase" class="method navigator-link" hash-for-method="RegisterWithBlankdData">RegisterWithBlankdData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyFirstSuiteName -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyFirstSuiteName" class="panel MyFirstSuiteName">
+          <div class="suite-MyFirstSuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestNGFramework.RegisterTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterWithValidData">
+                  </a> <!-- RegisterWithValidData -->
+                  <span class="method-name">RegisterWithValidData</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Manage&apos;]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.43)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.9.0&apos;, revision: &apos;d7057100a6&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [843e3169919a7a76fe264b3e9113a929, findElement {using=xpath, value=//a[@title=&apos;Manage&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.43, ms:edgeOptions: {debuggerAddress: localhost:51039}, msedge: {msedgedriverVersion: 114.0.1823.43 (ef5b3acd8c1d..., userDataDir: C:\Users\rajus\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51039/devtoo..., se:cdpVersion: 114.0.1823.43, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 843e3169919a7a76fe264b3e9113a929
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at TestNGFramework.RegisterTestCase.RegisterWithValidData(RegisterTestCase.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(this is to verify Register with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuiteName-class-failed -->
+          <div class="suite-MyFirstSuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestNGFramework.LoginTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInValidData(Adminn)">
+                  </a> <!-- LoginWithInValidData(Adminn) -->
+                  <span class="method-name">LoginWithInValidData</span>
+                  <span class="parameters">(Adminn)</span>
+                  <em>
+(this is to verify Login with Invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInValidData(Adminn)">
+                  </a> <!-- LoginWithInValidData(Adminn) -->
+                  <span class="method-name">LoginWithInValidData</span>
+                  <span class="parameters">(Adminn)</span>
+                  <em>
+(this is to verify Login with Invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithInValidData(Adminn)">
+                  </a> <!-- LoginWithInValidData(Adminn) -->
+                  <span class="method-name">LoginWithInValidData</span>
+                  <span class="parameters">(Adminn)</span>
+                  <em>
+(this is to verify Login with Invalid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithValidData(Adminn, Adminn@1234)">
+                  </a> <!-- LoginWithValidData(Adminn, Adminn@1234) -->
+                  <span class="method-name">LoginWithValidData</span>
+                  <span class="parameters">(Adminn,Adminn@1234)</span>
+                  <em>
+(this is to verify Login with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithValidData(Adminn, Adminn@1234)">
+                  </a> <!-- LoginWithValidData(Adminn, Adminn@1234) -->
+                  <span class="method-name">LoginWithValidData</span>
+                  <span class="parameters">(Adminn,Adminn@1234)</span>
+                  <em>
+(this is to verify Login with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithValidData(Adminn, Adminn@1234)">
+                  </a> <!-- LoginWithValidData(Adminn, Adminn@1234) -->
+                  <span class="method-name">LoginWithValidData</span>
+                  <span class="parameters">(Adminn,Adminn@1234)</span>
+                  <em>
+(this is to verify Login with valid data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuiteName-class-passed -->
+          <div class="suite-MyFirstSuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestNGFramework.RegisterTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterWithBlankdData">
+                  </a> <!-- RegisterWithBlankdData -->
+                  <span class="method-name">RegisterWithBlankdData</span>
+                  <em>
+(this is to verify Register with Blank data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuiteName-class-passed -->
+        </div> <!-- panel MyFirstSuiteName -->
+        <div panel-name="test-xml-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\rajus\eclipse-workspace\kabita-ws\CreatingStructuredTestingFramework\testing.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyFirstSuiteName&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;UserName1&quot; value=&quot;Adminn&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyLoginTestCasewithChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;Password1&quot; value=&quot;Adminn@1234&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNGFramework.LoginTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MyLoginTestCasewithChrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyLoginTestCaseWithFirefox&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;Password1&quot; value=&quot;Adminn@1234&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNGFramework.LoginTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MyLoginTestCaseWithFirefox --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyLoginTestCaseWithEdge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;Password1&quot; value=&quot;Adminn@1234&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNGFramework.LoginTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MyLoginTestCaseWithEdge --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;MyRegisterTestCase&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNGFramework.RegisterTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MyRegisterTestCase --&gt;
+&lt;/suite&gt; &lt;!-- MyFirstSuiteName --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyFirstSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">MyLoginTestCasewithChrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MyLoginTestCaseWithFirefox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MyLoginTestCaseWithEdge (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">MyRegisterTestCase (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyFirstSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyFirstSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyFirstSuiteName');
+function tableData_MyFirstSuiteName() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LoginWithInValidData')
+data.setCell(0, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(0, 3, 1360);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginWithValidData')
+data.setCell(1, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(1, 3, 1145);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'RegisterWithValidData')
+data.setCell(2, 2, 'TestNGFramework.RegisterTestCase')
+data.setCell(2, 3, 1131);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LoginWithInValidData')
+data.setCell(3, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(3, 3, 1076);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoginWithValidData')
+data.setCell(4, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(4, 3, 1036);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'RegisterWithBlankdData')
+data.setCell(5, 2, 'TestNGFramework.RegisterTestCase')
+data.setCell(5, 3, 890);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LoginWithInValidData')
+data.setCell(6, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(6, 3, 733);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LoginWithValidData')
+data.setCell(7, 2, 'TestNGFramework.LoginTestCase')
+data.setCell(7, 3, 689);
+window.suiteTableData['MyFirstSuiteName']= { tableData: data, tableDiv: 'times-div-MyFirstSuiteName'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-MyFirstSuiteName">
+              </div> <!-- times-div-MyFirstSuiteName -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyFirstSuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyFirstSuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestNGFramework.LoginTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">InitBrowser(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInValidData(Adminn)</span>
+                <span class="method-start">9680 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithValidData(Adminn, Adminn@1234)</span>
+                <span class="method-start">11043 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitBrowser</span>
+                <span class="method-start">12191 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">InitBrowser(firefox)</span>
+                <span class="method-start">12387 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInValidData(Adminn)</span>
+                <span class="method-start">17256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithValidData(Adminn, Adminn@1234)</span>
+                <span class="method-start">17991 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitBrowser</span>
+                <span class="method-start">18681 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">InitBrowser(edge)</span>
+                <span class="method-start">20054 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">LoginWithInValidData(Adminn)</span>
+                <span class="method-start">23022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginWithValidData(Adminn, Adminn@1234)</span>
+                <span class="method-start">24100 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitBrowser</span>
+                <span class="method-start">25138 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestNGFramework.RegisterTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">InitBrowser</span>
+                <span class="method-start">25279 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">RegisterWithBlankdData</span>
+                <span class="method-start">28940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RegisterWithValidData</span>
+                <span class="method-start">29831 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">ExitBrowser</span>
+                <span class="method-start">30968 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
